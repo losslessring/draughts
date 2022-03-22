@@ -13,7 +13,7 @@ const style = {
 
 const Cell = (props: any) => {
     return (
-        <div style={style} onClick={() => console.log('clicked') }></div>
+        <div style={style} onClick={() => {console.log('clicked')} }></div>
     )
 
 }
