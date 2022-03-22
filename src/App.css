@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.Cell-brown {
+  height: 300px;
+  width: 300px;
+  border: solid;
+  border-width: 2px;
+  border-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(134, 88, 15);
+}

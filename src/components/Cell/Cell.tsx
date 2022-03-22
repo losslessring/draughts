@@ -8,12 +8,14 @@ const style = {
     borderColor: 'blue',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'brown',
 }
 
 const Cell = (props: any) => {
     return (
-        <div style={style} onClick={() => {console.log('clicked')} }></div>
+        //<div style={style} onClick={() => {console.log('clicked')} }></div>
+        <div className="Cell-brown" onClick={() => {console.log('clicked')} }></div>
     )
 
 }
