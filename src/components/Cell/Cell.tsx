@@ -1,21 +1,18 @@
-import React from "react"
+import React, { useState, useEffect }  from "react"
 
-const style = {
-    height: 300,
-    width: 300,
-    border: 'solid',
-    borderWidth: '2px',
-    borderColor: 'blue',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'brown',
-}
+
 
 const Cell = (props: any) => {
+    
+    const [cellColor, setCellColor] = useState('Cell-yellow')
+
+    const switcher = (defaultValue: any) => (alternative: any) => (current: any) => {
+        return current === defaultValue ? alternative : defaultValue
+        
+    }
+
     return (
-        //<div style={style} onClick={() => {console.log('clicked')} }></div>
-        <div className="Cell-brown" onClick={() => {console.log('clicked')} }></div>
+        <div className={cellColor} onClick={() => setCellColor(switcher('Cell-yellow')('Cell-brown')(cellColor)) }></div>
     )
 
 }

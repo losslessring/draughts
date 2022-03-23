@@ -48,3 +48,15 @@
   align-items: center;
   background-color: rgb(134, 88, 15);
 }
+
+.Cell-yellow {
+  height: 300px;
+  width: 300px;
+  border: solid;
+  border-width: 2px;
+  border-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 224, 174);
+}
