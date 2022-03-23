@@ -7,7 +7,7 @@ import Cell  from './components/Cell/Cell'
 function App() {
   return (
     <div className="App">
-      <Cell></Cell>
+      {Array.from(Array(10).keys()).map(n => <Cell></Cell>)}
     </div>
   )
 }

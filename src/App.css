@@ -38,11 +38,8 @@
 }
 
 .Cell-brown {
-  height: 300px;
-  width: 300px;
-  border: solid;
-  border-width: 2px;
-  border-color: blue;
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,13 +47,17 @@
 }
 
 .Cell-yellow {
-  height: 300px;
-  width: 300px;
-  border: solid;
-  border-width: 2px;
-  border-color: blue;
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 224, 174);
+}
+
+
+.Selected {
+  -webkit-box-shadow:inset 0px 0px 0px 2px #f00;
+  -moz-box-shadow:inset 0px 0px 0px 2px #f00;
+  box-shadow:inset 0px 0px 0px 2px #f00;
 }
