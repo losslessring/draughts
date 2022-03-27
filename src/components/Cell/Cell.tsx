@@ -9,6 +9,7 @@ const Cell = (props: any) => {
 
     return (
         <div className={cellColor} onClick={() => setCellColor(switcher('Cell-yellow')('Cell-yellow Selected')(cellColor)) }></div>
+        // <div onClick={() => setCellColor(switcher('Cell-yellow')('Cell-yellow Selected')(cellColor)) }></div>
     )
 
 }
